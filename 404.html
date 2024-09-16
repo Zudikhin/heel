@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Heel</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84a9241a-2c2f-4a3d-ab2c-abb92cd66d1f"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header_block">
+              <div class="header_block_left">
+                <a href="#" class="header_block_left_logo">
+                  <img src="img/header/mob_logo.svg" alt="" class="header_block_left_logo_mob">
+                  <img src="img/header/logo.svg" alt="" class="header_block_left_logo_desk">
+                </a>
+                <button class="header_block_left_burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Где купить</a>
+                  </li>
+                  <li>
+                    <a href="#">О HEEL COMFORT</a>
+                  </li>
+                  <li>
+                    <a href="#">Партнёрам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_block_right">
+                <div class="header_block_right_search">
+                  <button class="header_block_right_search_btn">
+                    <img src="img/icons/search.svg" alt="">
+                  </button>
+                  <div class="header_block_right_search_wrap">
+                    <div class="header_block_right_search_form">
+                      <form action="">
+                        <input type="text" placeholder="" id="search">
+                      </form>
+                      <button class="header_block_right_search_form_remove">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.22266" y="-0.192383" width="24" height="2" rx="1" transform="rotate(45 4.22266 -0.192383)" fill="#F3A83F"/>
+                          <rect x="2.80664" y="16.7782" width="24" height="2" rx="1" transform="rotate(-45 2.80664 16.7782)" fill="#F3A83F"/>
+                          <rect x="19" y="16" width="2" height="2" rx="1" fill="#F3A83F"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="header_block_right_search_drop">
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/1.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUE ENERGY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/2.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLACK GRAVITY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/3.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUR ATTENTION </h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/1.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUE ENERGY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/2.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLACK GRAVITY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/3.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUR ATTENTION </h4>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="tel:+74952586158" class="header_block_right_tel">
+                  <img src="img/icons/tel_orange.svg" alt="">
+                  <span>+7 (495) 258-61-58</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="notfound">
+      <div class="container">
+        <div class="notfound_wrap">
+          <div class="notfound_wrap_text">
+            <img src="img/404/404.svg" alt="">
+            <h3>УПС! <br> <span>Извините</span></h3>
+            <p>Данная страница отсутствует</p>
+            <div class="notfound_wrap_text_btns">
+              <a href="#" class="button">Вернуться назад</a>
+              <a href="#" class="notfound_wrap_text_btns_back">Перейти на главную</a>
+            </div>
+          </div>
+          <div class="notfound_wrap_img">
+            <img src="img/404/img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_block">
+              <div class="footer_block_logo">
+                <a href="#">
+                  <img src="img/header/logo.svg" alt="">
+                </a>
+                <p>© Все права защищены. <br> ООО «Сурсил-Орто», 2024.</p>
+              </div>
+              <ul class="footer_block_nav">
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Heel Comfort</a>
+                </li>
+                <li>
+                  <a href="#">Технология и здоровье</a>
+                </li>
+                <li>
+                  <a href="#">Магазины и маркет-плейсы</a>
+                </li>
+                <li>
+                  <a href="#">Партнёрам</a>
+                </li>
+                <li>
+                  <a href="#">Пользовательское соглашение</a>
+                </li>
+              </ul>
+              <div class="footer_block_contact">
+                <div class="footer_block_contact_item">
+                  <img src="img/icons/geo_white.svg" alt="">
+                  <span>Москва, ул. Профсоюзная, 26/44</span>
+                </div>
+                <div class="footer_block_contact_item">
+                  <img src="img/icons/time_white.svg" alt="">
+                  <span>Пн-Вс: 09:00-20:00</span>
+                </div>
+                <a href="tel:+74952586158" class="footer_block_contact_item">
+                  <img src="img/icons/tel_white.svg" alt="">
+                  <span>+7 (495) 258-61-58</span>
+                </a>
+                <a href="mailto:heelcomfort@mail.ru" class="footer_block_contact_item">
+                  <img src="img/icons/mail_white.png" alt="">
+                  <span>heelcomfort@mail.ru</span>
+                </a>
+              </div>
+              <div class="footer_block_form">
+                <p>Подписывайтесь на наши обновления</p>
+                <form action="">
+                  <div class="form-floating footer_block_form_block">
+                    <input type="email" class="form-control" placeholder="Ваш e-mail">
+                    <label>Ваш e-mail</label>
+                  </div>
+                  <button type="submit">
+                    <svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 0.86159C15 0.477678 15.4147 0.236995 15.7481 0.427468L21.2403 3.56588C21.5762 3.75783 21.5762 4.24217 21.2403 4.43412L15.7481 7.57253C15.4147 7.76301 15 7.52232 15 7.13841V5H1C0.447715 5 0 4.55228 0 4C0 3.44772 0.447715 3 1 3H15V0.86159Z" fill="#A6B1BC"/>
+                    </svg>
+                  </button>
+                </form>
+                <p>Следите за нами в социальных сетях</p>
+                <div class="footer_block_form_social">
+                  <a href="#" target="_blank">
+                    <img src="img/social/telegram.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="img/social/vk.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="footer_block_mob">
+                <p>© Все права защищены. <br> ООО «Сурсил-Орто», 2024.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="dropdown">
+      <ul>
+        <li class="desk_hide">
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Технологии</a>
+        </li>
+        <li>
+          <a href="#">Статьи</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li class="desk_hide">
+          <a href="#">Партнёрам</a>
+        </li>
+        <li class="desk_hide">
+          <a href="#">О HEEL COMFORT</a>
+        </li>
+      </ul>
+      <div class="dropdown_social">
+        <a href="#">
+          <img src="img/social/white_telegram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="img/social/white_vk.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
