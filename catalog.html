@@ -8,6 +8,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84a9241a-2c2f-4a3d-ab2c-abb92cd66d1f"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css" />    
   </head>
 
@@ -213,6 +214,54 @@
 
     <section class="catalog">
       <div class="container">
+        <div class="catalog_filter">
+          <div class="catalog_filter_mob">
+            <img src="img/catalog/filter.svg" alt="">
+            <span>ФИЛЬТР</span>
+          </div>
+          <div class="catalog_filter_wrap">
+            <div class="catalog_filter_wrap_item">
+              <select name="" id="">
+                <option value="Серия">Серия</option>
+                <option value="Active Care">Active Care</option>
+                <option value="Stabil Care">Stabil Care</option>
+              </select>
+            </div>
+            <div class="catalog_filter_wrap_item">
+              <select name="" id="">
+                <option value="Сезон">Сезон</option>
+                <option value="Весна">Весна</option>
+                <option value="Лето">Лето</option>
+                <option value="Осень">Осень</option>
+                <option value="Зима">Зима</option>
+              </select>
+            </div>
+            <div class="catalog_filter_wrap_item">
+              <select name="" id="">
+                <option value="Пол">Пол</option>
+                <option value="Мужские">Мужские</option>
+                <option value="Женские">Женские</option>
+              </select>
+            </div>
+            <div class="catalog_filter_wrap_item">
+              <select name="" id="">
+                <option value="Цвет">Цвет</option>
+                <option value="Белый">Белый</option>
+                <option value="Чёрный">Чёрный</option>
+                <option value="Красный">Красный</option>
+                <option value="Зелёный">Зелёный</option>
+                <option value="Синий">Синий</option>
+                <option value="Голубой">Голубой</option>
+                <option value="Жёлтый">Жёлтый</option>
+              </select>
+            </div>
+          </div>
+          <div class="catalog_filter_btns">
+            <button class="catalog_filter_btns_reset">Сбросить</button>
+            <button class="button catalog_filter_btns_apply">Применить</button>
+          </div>
+          
+        </div>
         <div class="row">
           <div class="col-12 col-xl-6">
             <a href="#" class="catalog_item">
@@ -568,11 +617,67 @@
       </div>
     </div>
 
+    <div class="modal_filter">
+      <div class="modal_filter_top">
+        <div class="modal_filter_top_text">
+          <img src="img/catalog/filter.svg" alt="">
+          <span>ФИЛЬТР</span>
+        </div>
+        <button class="modal_filter_top_close">
+          <img src="img/catalog/close.svg" alt="">
+        </button>
+      </div>
+      <div class="modal_filter_main">
+        <div class="modal_filter_main_item">
+          <select name="" id="">
+            <option value="Серия">Серия</option>
+            <option value="Active Care">Active Care</option>
+            <option value="Stabil Care">Stabil Care</option>
+          </select>
+        </div>
+        <div class="modal_filter_main_item">
+          <select name="" id="">
+            <option value="Сезон">Сезон</option>
+            <option value="Весна">Весна</option>
+            <option value="Лето">Лето</option>
+            <option value="Осень">Осень</option>
+            <option value="Зима">Зима</option>
+          </select>
+        </div>
+        <div class="modal_filter_main_item">
+          <select name="" id="">
+            <option value="Пол">Пол</option>
+            <option value="Мужские">Мужские</option>
+            <option value="Женские">Женские</option>
+          </select>
+        </div>
+        <div class="modal_filter_main_item">
+          <select name="" id="">
+            <option value="Цвет">Цвет</option>
+            <option value="Белый">Белый</option>
+            <option value="Чёрный">Чёрный</option>
+            <option value="Красный">Красный</option>
+            <option value="Зелёный">Зелёный</option>
+            <option value="Синий">Синий</option>
+            <option value="Голубой">Голубой</option>
+            <option value="Жёлтый">Жёлтый</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal_filter_btns">
+        <button class="modal_filter_btns_cancel">Отмена</button>
+        <button class="modal_filter_btns_apply button">Применить</button>
+      </div>
+    </div>
+
+    <div class="back_filter"></div>
+
     <div class="back_modal"></div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
 
   </body>

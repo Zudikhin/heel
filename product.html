@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Heel</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84a9241a-2c2f-4a3d-ab2c-abb92cd66d1f"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header_block">
+              <div class="header_block_left">
+                <a href="#" class="header_block_left_logo">
+                  <img src="img/header/mob_logo.svg" alt="" class="header_block_left_logo_mob">
+                  <img src="img/header/logo.svg" alt="" class="header_block_left_logo_desk">
+                </a>
+                <button class="header_block_left_burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Где купить</a>
+                  </li>
+                  <li>
+                    <a href="#">О HEEL COMFORT</a>
+                  </li>
+                  <li>
+                    <a href="#">Партнёрам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_block_right">
+                <div class="header_block_right_search">
+                  <button class="header_block_right_search_btn">
+                    <img src="img/icons/search.svg" alt="">
+                  </button>
+                  <div class="header_block_right_search_wrap">
+                    <div class="header_block_right_search_form">
+                      <form action="">
+                        <input type="text" placeholder="" id="search">
+                      </form>
+                      <button class="header_block_right_search_form_remove">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.22266" y="-0.192383" width="24" height="2" rx="1" transform="rotate(45 4.22266 -0.192383)" fill="#F3A83F"/>
+                          <rect x="2.80664" y="16.7782" width="24" height="2" rx="1" transform="rotate(-45 2.80664 16.7782)" fill="#F3A83F"/>
+                          <rect x="19" y="16" width="2" height="2" rx="1" fill="#F3A83F"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="header_block_right_search_drop">
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/1.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUE ENERGY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/2.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLACK GRAVITY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/3.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUR ATTENTION </h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/1.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUE ENERGY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/2.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLACK GRAVITY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/3.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUR ATTENTION </h4>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="tel:+74952586158" class="header_block_right_tel">
+                  <img src="img/icons/tel_orange.svg" alt="">
+                  <span>+7 (495) 258-61-58</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="breadcrumb">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li>
+            <span>—</span>
+          </li>
+          <li>
+            <a href="#">
+              Каталог
+            </a>
+          </li>
+          <li>
+            <span>—</span>
+          </li>
+          <li>
+            <span>Blue energy</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product">
+      <div class="container">
+        <div class="product_up">
+          <h1 class="title">BLUЕ ENERGY</h1>
+          <p>КРОССОВКИ ОРТОПЕДИЧЕСКИЕ HEEL COMFORT</p>
+          <span>Артикул: HC-23079-2</span>
+        </div>
+        <div class="product_one">
+          <div class="product_one_img">
+            <img src="img/single_product/1.png" alt="">
+          </div>
+          <div class="product_one_text">
+            <ul>
+              <li>
+                <span>Пол</span>
+                <div class="line"></div>
+                <span>женские</span>
+              </li>
+              <li>
+                <span>Цвет</span>
+                <div class="line"></div>
+                <span>голубой</span>
+              </li>
+              <li>
+                <span>Полнота</span>
+                <div class="line"></div>
+                <span>M(10)</span>
+              </li>
+              <li>
+                <span>Категория стабильности</span>
+                <div class="line"></div>
+                <span>ACTIVE CARE</span>
+              </li>
+              <li>
+                <span>Вверх</span>
+                <div class="line"></div>
+                <span>полиэстер/нат. кожа</span>
+              </li>
+              <li>
+                <span>Подкладка</span>
+                <div class="line"></div>
+                <span>текстиль 3D</span>
+              </li>
+              <li>
+                <span>Подошва</span>
+                <div class="line"></div>
+                <span>ЭВА/резина</span>
+              </li>
+              <li>
+                <span>Застежка</span>
+                <div class="line"></div>
+                <span>шнуровка</span>
+              </li>
+              <li>
+                <span>Каблук</span>
+                <div class="line"></div>
+                <span>5 см</span>
+              </li>
+              <li>
+                <span>Съемная стелька</span>
+                <div class="line"></div>
+                <span>да</span>
+              </li>
+            </ul>
+            <div class="product_one_text_size">
+              <h5>Размерный ряд</h5>
+              <div class="product_one_text_size_wrap">
+                <div class="product_one_text_size_wrap_list">
+                  <div class="product_one_text_size_wrap_list_item">
+                    <span>36</span>
+                  </div>
+                  <div class="product_one_text_size_wrap_list_item">
+                    <span>37</span>
+                  </div>
+                  <div class="product_one_text_size_wrap_list_item">
+                    <span>38</span>
+                  </div>
+                  <div class="product_one_text_size_wrap_list_item">
+                    <span>39</span>
+                  </div>
+                  <div class="product_one_text_size_wrap_list_item">
+                    <span>40</span>
+                  </div>
+                  <div class="product_one_text_size_wrap_list_item">
+                    <span>41</span>
+                  </div>
+                </div>
+                <a href="#" class="button">ПОСМОТРЕТЬ магазины</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product_two">
+          <div class="product_two_img">
+            <img src="img/single_product/2.png" alt="">
+          </div>
+          <div class="product_two_block">
+            <div class="product_two_block_item">
+              <svg width="105" height="108" viewBox="0 0 105 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M87.4616 8.02561C68.4812 14.922 44.1346 23.7681 53.3035 57.2059C35.1587 74.0169 0.0631034 94.3329 0.0631034 94.3329L1.91868 99.6367C1.91868 99.6367 13.4709 93.7517 29.4924 82.4968C42.9045 87.6989 59.0085 92.5213 76.2803 94.6841C64.1625 95.4162 56.5397 92.9778 45.0513 89.3029C43.477 88.7994 41.8301 88.2725 40.089 87.7275C47.2228 109.823 65.008 114.844 98.5139 94.4015C94.9937 93.2157 91.0155 89.8263 86.5712 86.0398C74.5905 75.8323 59.2226 62.739 40.3095 82.1493C38.1173 81.4631 35.7975 80.6312 33.4119 79.6984C50.8196 67.0686 72.474 48.6419 90.3387 25.0026C83.3203 38.9965 75.712 45.9593 64.2455 56.453C62.6742 57.891 61.0304 59.3953 59.3058 60.9931C88.2515 67.0546 105.267 50.3853 104.384 0C100.805 3.17743 94.5025 5.46737 87.4616 8.02561Z" fill="#D9D9D9"/>
+              </svg>
+              <span>Весна</span>
+            </div>
+            <div class="product_two_block_item">
+              <svg width="115" height="115" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M74.4789 2.26833L77.2924 15.4907C74.7698 14.289 72.1023 13.2995 69.3063 12.5503C66.5095 11.8009 63.7039 11.324 60.9177 11.1035L69.9658 1.05905C71.3994 -0.532456 74.0331 0.173229 74.4789 2.26833ZM30.5292 6.251L41.8732 13.6143C36.504 15.5168 31.5198 18.3946 27.1877 22.0935L26.4829 8.58715C26.3713 6.44806 28.7325 5.08478 30.5292 6.251ZM2.26841 40.1441L15.4925 37.3302C14.2906 39.8532 13.3008 42.5211 12.5515 45.3177C11.8021 48.1144 11.3253 50.9201 11.1047 53.7063L1.05913 44.6572C-0.532369 43.2236 0.173317 40.5899 2.26841 40.1441ZM6.25115 84.0936L13.6149 72.7489C15.5172 78.1184 18.3949 83.1028 22.0938 87.4351L8.58731 88.1399C6.44822 88.2516 5.08493 85.8903 6.25115 84.0936ZM40.1442 112.355L37.3304 99.1309C39.8537 100.333 42.522 101.323 45.3189 102.072C48.1151 102.822 50.9201 103.298 53.7057 103.519L44.6573 113.564C43.2237 115.155 40.59 114.45 40.1442 112.355ZM84.0937 108.372L72.7502 101.009C78.1192 99.1068 83.1033 96.2295 87.4352 92.5311L88.14 106.036C88.2517 108.175 85.8904 109.538 84.0937 108.372ZM112.355 74.4788L99.1328 77.2922C100.335 74.7693 101.324 72.1015 102.074 69.305C102.823 66.5089 103.3 63.7039 103.52 60.9183L113.564 69.9657C115.155 71.3993 114.45 74.033 112.355 74.4788ZM108.372 30.5292L101.01 41.872C99.1073 36.5032 96.2298 31.5194 92.5314 27.1876L106.036 26.4828C108.175 26.3712 109.538 28.7325 108.372 30.5292ZM46.2628 98.5387C69.0321 104.64 92.436 91.1275 98.537 68.3582C104.638 45.589 91.1257 22.1851 68.3565 16.0841C45.5873 9.98312 22.1834 23.4954 16.0824 46.2646C9.98137 69.0338 23.4936 92.4377 46.2628 98.5387Z" fill="#D9D9D9"/>
+              </svg>
+              <span>Лето</span>
+            </div>
+            <div class="product_two_block_item">
+              <svg width="142" height="132" viewBox="0 0 142 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M102.919 0.0631693L107.571 18.1097L130.349 11.1226L123.362 33.9002L141.408 38.5526L104.98 65.0657L135.583 76.8787L122.251 84.2827L133.002 101.236L113.25 100.212L113.644 115.706L81.0699 87.9498L68.7288 113.207L57.3269 86.3101L58.5079 85.1303L67.9834 75.1761L67.9516 94.833L68.9684 93.2592L70.9788 72.1806L73.473 69.5907L78.4614 64.4108L111.876 87.6569L111.299 86.5622L80.4288 62.4434L83.4498 59.231L88.4381 54.0511L89.3921 53.0621L111.455 49.2184L109.544 48.3437L91.1273 51.1704L93.4265 48.8712L98.4148 43.6913L118.368 22.9719L118.09 22.6933L96.7476 43.0604L86.0766 53.2439L83.4088 55.7898L79.3309 40.9284L79.1721 40.2515L80.7411 58.3357L75.4055 63.4275L56.0959 31.359L55.1404 30.9216L72.5558 66.2772L70.2243 68.6087L43.5797 73.0518L44.655 73.0908L66.1169 72.4028L55.7223 82.3447L17.0977 119.256L18.9083 121.067L20.6277 122.786L12.5858 131.261L0.598047 123.824L51.3543 82.5311L49.5782 81.7782L42.474 78.7667L28.2655 72.7435L53.4709 60.4276L25.2703 27.3323L40.7645 27.7261L39.74 7.97412L56.6936 18.7252L64.0976 5.39265L76.2071 36.7645L102.919 0.0631693Z" fill="#D9D9D9"/>
+              </svg>
+              <span>Осень</span>
+            </div>
+            <div class="product_two_block_item">
+              <svg width="103" height="109" viewBox="0 0 103 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.4088 9.2982C44.6449 9.88857 44.5042 10.9865 45.0946 11.7504L51.3824 19.8866L50.4346 27.2819L45.7632 21.8191C45.1358 21.0854 44.0322 20.9992 43.2985 21.6266L42.1893 22.5752C41.4555 23.2026 41.3693 24.3061 41.9968 25.0399L49.5848 33.9135L48.5116 42.2886L44.7664 43.855L38.28 38.9132L37.3125 27.5345C37.2307 26.5725 36.3845 25.8589 35.4225 25.9407L33.9514 26.0658C32.9894 26.1476 32.2758 26.9938 32.3576 27.9558L32.9436 34.8476L26.7235 30.1087L24.9743 20.4711C24.8019 19.5211 23.892 18.8908 22.9421 19.0632L8.63495 21.6598C7.685 21.8323 7.05467 22.7421 7.22708 23.6921L9.82371 37.9992C9.99612 38.9492 10.906 39.5795 11.8559 39.4071L22.3886 37.4955L27.6759 41.5237L21.0071 42.7638C20.0579 42.9403 19.4315 43.8529 19.608 44.8021L19.8701 46.2116C20.0467 47.1608 20.9592 47.7872 21.9084 47.6107L32.9663 45.5543L39.5029 50.5343L38.9697 54.6955L31.2077 57.942L20.6219 52.9742C19.7479 52.5641 18.7069 52.9401 18.2967 53.8141L17.6831 55.1215C17.273 55.9956 17.649 57.0366 18.523 57.4468L25.0587 60.5138L18.6744 63.1841L9.36708 58.8654C8.4913 58.459 7.4519 58.8395 7.04552 59.7153L0.92515 72.9054C0.518773 73.7811 0.899305 74.8205 1.77509 75.2269L14.9651 81.3473C15.8409 81.7537 16.8803 81.3731 17.2867 80.4973L21.6142 71.1711L28.8335 68.1516L26.2832 75.3673C25.9615 76.2776 26.4386 77.2764 27.3489 77.5981L28.7329 78.0873C29.6432 78.409 30.642 77.9319 30.9637 77.0216L35.012 65.5674L41.7756 62.7385L45.5249 65.5949L44.4765 73.7755L35.4103 80.0908C34.6181 80.6426 34.4232 81.7322 34.9751 82.5244L35.8133 83.7277C36.3651 84.5199 37.4547 84.7148 38.2469 84.163L43.6255 80.4164L42.6532 88.0034L34.526 94.2843C33.7621 94.8747 33.6214 95.9725 34.2118 96.7365L43.1034 108.242C43.6937 109.006 44.7916 109.147 45.5556 108.556L57.061 99.6646C57.825 99.0742 57.9657 97.9763 57.3753 97.2124L51.088 89.0769L52.0559 81.5244L56.4635 86.6787C57.0909 87.4124 58.1944 87.4986 58.9282 86.8711L60.0408 85.9197C60.7746 85.2922 60.8608 84.1887 60.2333 83.455L52.9064 74.8869L53.9113 67.0453L58.6004 65.0841L64.826 69.8271L65.8239 81.5632C65.9057 82.5252 66.7518 83.2387 67.7138 83.157L69.1818 83.0321C70.1438 82.9503 70.8574 82.1042 70.7756 81.1422L70.159 73.8902L76.1179 78.4301L77.9028 88.2646C78.0752 89.2145 78.9851 89.8449 79.935 89.6725L94.2422 87.0758C95.1921 86.9034 95.8224 85.9936 95.65 85.0436L93.0534 70.7365C92.881 69.7865 91.9711 69.1562 91.0212 69.3286L80.6683 71.2076L75.4566 67.2369L82.526 65.9223C83.4752 65.7458 84.1015 64.8332 83.925 63.884L83.6539 62.4261C83.4774 61.4769 82.5648 60.8505 81.6156 61.027L70.1133 63.1661L63.6428 58.2364L64.2717 53.3294L70.9548 50.5341L81.6013 55.5304C82.4754 55.9406 83.5164 55.5645 83.9266 54.6905L84.5481 53.366C84.9583 52.492 84.5823 51.451 83.7083 51.0408L77.1273 47.9524L83.8147 45.1554L94.1556 49.9537C95.0314 50.3601 96.0708 49.9796 96.4771 49.1038L102.598 35.9137C103.004 35.0379 102.623 33.9985 101.748 33.5922L88.5575 27.4718C87.6817 27.0654 86.6423 27.4459 86.236 28.3217L82.4335 36.5165L74.7356 39.7362L76.8578 33.7319C77.1795 32.8216 76.7024 31.8229 75.7921 31.5011L74.3995 31.0089C73.4892 30.6872 72.4905 31.1643 72.1687 32.0746L68.5459 42.3251L60.5157 45.6838L56.9928 42.9997L57.9336 35.6579L68.1137 28.5667C68.9059 28.0149 69.1008 26.9253 68.549 26.1331L67.7171 24.9388C67.1652 24.1466 66.0756 23.9517 65.2834 24.5036L58.7827 29.0317L59.8173 20.9589L67.9438 14.6785C68.7078 14.0881 68.8485 12.9902 68.2581 12.2263L59.3665 0.72084C58.7761 -0.0430932 57.6782 -0.183788 56.9143 0.406592L45.4088 9.2982Z" fill="#D9D9D9"/>
+              </svg>
+              <span>Зима</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_three">
+          <div class="product_three_img">
+            <img src="img/single_product/3.png" alt="">
+          </div>
+          <div class="product_three_text">
+            <h3>Полезные ЭФФЕКТЫ</h3>
+            <div class="product_three_text_list">
+              <div class="product_three_text_list_item">
+                <img src="img/single_product/effect_1.svg" alt="">
+                <div class="product_three_text_list_item_wrap">
+                  <h4>ПЕРЕКАТНАЯ ПОДОШВА</h4>
+                  <p>Физиологичный перекат, снижение нагрузки на переднюю область стопы</p>
+                </div>
+              </div>
+              <div class="product_three_text_list_item">
+                <img src="img/single_product/effect_2.svg" alt="">
+                <div class="product_three_text_list_item_wrap">
+                  <h4>СИСТЕМА NO-SHOCK</h4>
+                  <p>Поглощение и распределение ударных вибраций в области пятки</p>
+                </div>
+              </div>
+              <div class="product_three_text_list_item">
+                <img src="img/single_product/effect_3.svg" alt="">
+                <div class="product_three_text_list_item_wrap">
+                  <h4>ЭНЕРГЕТИЧЕСКИЙ CASH-BACK</h4>
+                  <p>Возврат полезной энергии для ходьбы</p>
+                </div>
+              </div>
+              <div class="product_three_text_list_item">
+                <img src="img/single_product/effect_4.svg" alt="">
+                <div class="product_three_text_list_item_wrap">
+                  <h4>REFLEX&SUPPORT</h4>
+                  <p>Массажная анатомическая стелька</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product_four">
+          <div class="product_four_img">
+            <img src="img/single_product/4.png" alt="">
+          </div>
+          <div class="product_four_text">
+            <div class="product_four_text_item">
+              <span>Активная ходьба</span>
+            </div>
+            <div class="product_four_text_item">
+              <span>Скандинавская ходьба</span>
+            </div>
+            <div class="product_four_text_item">
+              <span>Помещение</span>
+            </div>
+            <div class="product_four_text_item">
+              <span>Прогулка</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_mob">
+          <div class="product_mob_effect">
+            <h3>Полезные ЭФФЕКТЫ</h3>
+            <div class="product_mob_effect_list">
+              <div class="product_mob_effect_list_item">
+                <img src="img/single_product/effect_1.svg" alt="">
+                <div class="product_mob_effect_list_item_wrap">
+                  <h4>ПЕРЕКАТНАЯ ПОДОШВА</h4>
+                  <p>Физиологичный перекат, снижение нагрузки на переднюю область стопы</p>
+                </div>
+              </div>
+              <div class="product_mob_effect_list_item">
+                <img src="img/single_product/effect_2.svg" alt="">
+                <div class="product_mob_effect_list_item_wrap">
+                  <h4>СИСТЕМА NO-SHOCK</h4>
+                  <p>Поглощение и распределение ударных вибраций в области пятки</p>
+                </div>
+              </div>
+              <div class="product_mob_effect_list_item">
+                <img src="img/single_product/effect_3.svg" alt="">
+                <div class="product_mob_effect_list_item_wrap">
+                  <h4>ЭНЕРГЕТИЧЕСКИЙ CASH-BACK</h4>
+                  <p>Возврат полезной энергии для ходьбы</p>
+                </div>
+              </div>
+              <div class="product_mob_effect_list_item">
+                <img src="img/single_product/effect_4.svg" alt="">
+                <div class="product_mob_effect_list_item_wrap">
+                  <h4>REFLEX&SUPPORT</h4>
+                  <p>Массажная анатомическая стелька</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product_mob_step">
+            <div class="product_mob_step_item">
+              <span>Активная ходьба</span>
+            </div>
+            <div class="product_mob_step_item">
+              <span>Скандинавская ходьба</span>
+            </div>
+            <div class="product_mob_step_item">
+              <span>Помещение</span>
+            </div>
+            <div class="product_mob_step_item">
+              <span>Прогулка</span>
+            </div>
+          </div>
+        </div>
+        <div class="product_five">
+          <div class="product_five_img">
+            <img src="img/single_product/5.png" alt="">
+          </div>
+          <div class="product_five_text">
+            <h3>Облегчает состояние при наличии:</h3>
+            <div class="product_five_text_list">
+              <div class="product_five_text_list_item">
+                <img src="img/single_product/bol.svg" alt="">
+                <p>Боли в стопе, в коленях, в спине</p>
+              </div>
+              <div class="product_five_text_list_item">
+                <img src="img/single_product/ves.svg" alt="">
+                <p>Лишний вес</p>
+              </div>
+              <div class="product_five_text_list_item">
+                <img src="img/single_product/shpora.svg" alt="">
+                <p>Пяточная шпора</p>
+              </div>
+              <div class="product_five_text_list_item">
+                <img src="img/single_product/utomlyaemost.svg" alt="">
+                <p>Повышенная утомляемость при ходьбе</p>
+              </div>
+              <div class="product_five_text_list_item">
+                <img src="img/single_product/varikoz.svg" alt="">
+                <p>Варикоз</p>
+              </div>
+              <div class="product_five_text_list_item">
+                <img src="img/single_product/oteki.svg" alt="">
+                <p>Отеки ног</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product_six">
+          <div class="product_six_img">
+            <img src="img/single_product/6.png" alt="">
+          </div>
+          <div class="product_six_text">
+            <h3>Описание</h3>
+            <div class="product_six_text_description">
+              <p>Женская модель амортизирующих кроссовок BLUE RNERGY на перекатной подошве линейки SOFT CARE  с активной амортизацией. </p>
+              <p>Уникальная конструкция подошвы со вспененной внутренней вставкой NO-SHOCK в области пятки обеспечивает мощную амортизацию, эффективное поглощение и распределение ударной нагрузки на суставы и позвоночник.</p>
+              <p>Сформированный  физиологичный перекат подошвы облегчает процесс ходьбы и снимает нагрузку с переднего отдела стопы.</p>
+              <p>Боковые направляющие и формоустойчивый задник надежно фиксируют стопу в правильном положении и предотвращают боковой завал.</p>
+              <p>Съемная анатомическая стелька с массажными капсулами поддерживает продольный свод и стимулирует кровообращение в стопах.</p>
+              <p>Внутренняя колодка глубокая, просторная, не оказывает давления на зону "косточки".</p>
+              <p>Верх модели выполнен из комбинации  прочного "дышащего" текстиля и натуральной кожи, не деформируется, отлично держит форму.</p>
+              <p>Подклад из текстиля 3d плетения со смягчающими вставками в области голеностопа создает дополнительный комфорт для стопы.</p>
+              <p>Подошва оснащена антискользящим протектором, устойчивым к износу.</p>
+              <p>Физиологичная гиперамортизирующая обувь Heel Comfort — это идеальное решение для облегчения боли при пяточной шпоре, плантарном фасциите, вальгусной деформации большого пальца, тендинитах и артропатиях. </p>
+              <p>Все модели Heel Comfort облегчают ходьбу и снижают усталость.</p>
+            </div>
+            <button>
+              <span>Читать полностью</span>
+              <img src="img/single_product/arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="suit_down">
+          <span>Узнайте где купить</span>
+          <a href="#" class="button">посмотреть магазины</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_block">
+              <div class="footer_block_logo">
+                <a href="#">
+                  <img src="img/header/logo.svg" alt="">
+                </a>
+                <p>© Все права защищены. <br> ООО «Сурсил-Орто», 2024.</p>
+              </div>
+              <ul class="footer_block_nav">
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Heel Comfort</a>
+                </li>
+                <li>
+                  <a href="#">Технология и здоровье</a>
+                </li>
+                <li>
+                  <a href="#">Магазины и маркет-плейсы</a>
+                </li>
+                <li>
+                  <a href="#">Партнёрам</a>
+                </li>
+                <li>
+                  <a href="#">Пользовательское соглашение</a>
+                </li>
+              </ul>
+              <div class="footer_block_contact">
+                <div class="footer_block_contact_item">
+                  <img src="img/icons/geo_white.svg" alt="">
+                  <span>Москва, ул. Профсоюзная, 26/44</span>
+                </div>
+                <div class="footer_block_contact_item">
+                  <img src="img/icons/time_white.svg" alt="">
+                  <span>Пн-Вс: 09:00-20:00</span>
+                </div>
+                <a href="tel:+74952586158" class="footer_block_contact_item">
+                  <img src="img/icons/tel_white.svg" alt="">
+                  <span>+7 (495) 258-61-58</span>
+                </a>
+                <a href="mailto:heelcomfort@mail.ru" class="footer_block_contact_item">
+                  <img src="img/icons/mail_white.png" alt="">
+                  <span>heelcomfort@mail.ru</span>
+                </a>
+              </div>
+              <div class="footer_block_form">
+                <p>Подписывайтесь на наши обновления</p>
+                <form action="">
+                  <div class="form-floating footer_block_form_block">
+                    <input type="email" class="form-control" placeholder="Ваш e-mail">
+                    <label>Ваш e-mail</label>
+                  </div>
+                  <button type="submit">
+                    <svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 0.86159C15 0.477678 15.4147 0.236995 15.7481 0.427468L21.2403 3.56588C21.5762 3.75783 21.5762 4.24217 21.2403 4.43412L15.7481 7.57253C15.4147 7.76301 15 7.52232 15 7.13841V5H1C0.447715 5 0 4.55228 0 4C0 3.44772 0.447715 3 1 3H15V0.86159Z" fill="#A6B1BC"/>
+                    </svg>
+                  </button>
+                </form>
+                <p>Следите за нами в социальных сетях</p>
+                <div class="footer_block_form_social">
+                  <a href="#" target="_blank">
+                    <img src="img/social/telegram.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="img/social/vk.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="footer_block_mob">
+                <p>© Все права защищены. <br> ООО «Сурсил-Орто», 2024.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="dropdown">
+      <ul>
+        <li class="desk_hide">
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Технологии</a>
+        </li>
+        <li>
+          <a href="#">Статьи</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li class="desk_hide">
+          <a href="#">Партнёрам</a>
+        </li>
+        <li class="desk_hide">
+          <a href="#">О HEEL COMFORT</a>
+        </li>
+      </ul>
+      <div class="dropdown_social">
+        <a href="#">
+          <img src="img/social/white_telegram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="img/social/white_vk.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+

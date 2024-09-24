@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Heel</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=84a9241a-2c2f-4a3d-ab2c-abb92cd66d1f"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header_block">
+              <div class="header_block_left">
+                <a href="#" class="header_block_left_logo">
+                  <img src="img/header/mob_logo.svg" alt="" class="header_block_left_logo_mob">
+                  <img src="img/header/logo.svg" alt="" class="header_block_left_logo_desk">
+                </a>
+                <button class="header_block_left_burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <ul>
+                  <li>
+                    <a href="#">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Где купить</a>
+                  </li>
+                  <li>
+                    <a href="#">О HEEL COMFORT</a>
+                  </li>
+                  <li>
+                    <a href="#">Партнёрам</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_block_right">
+                <div class="header_block_right_search">
+                  <button class="header_block_right_search_btn">
+                    <img src="img/icons/search.svg" alt="">
+                  </button>
+                  <div class="header_block_right_search_wrap">
+                    <div class="header_block_right_search_form">
+                      <form action="">
+                        <input type="text" placeholder="" id="search">
+                      </form>
+                      <button class="header_block_right_search_form_remove">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="4.22266" y="-0.192383" width="24" height="2" rx="1" transform="rotate(45 4.22266 -0.192383)" fill="#F3A83F"/>
+                          <rect x="2.80664" y="16.7782" width="24" height="2" rx="1" transform="rotate(-45 2.80664 16.7782)" fill="#F3A83F"/>
+                          <rect x="19" y="16" width="2" height="2" rx="1" fill="#F3A83F"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="header_block_right_search_drop">
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/1.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUE ENERGY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/2.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLACK GRAVITY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/3.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUR ATTENTION </h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/1.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUE ENERGY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/2.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLACK GRAVITY</h4>
+                        </div>
+                      </a>
+                      <a href="#" class="header_block_right_search_drop_item">
+                        <div class="header_block_right_search_drop_item_img">
+                          <img src="img/product/3.png" alt="">
+                        </div>
+                        <div class="header_block_right_search_drop_item_text">
+                          <span>SOFT CARE</span>
+                          <h4>BLUR ATTENTION </h4>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="tel:+74952586158" class="header_block_right_tel">
+                  <img src="img/icons/tel_orange.svg" alt="">
+                  <span>+7 (495) 258-61-58</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="breadcrumb">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/icons/back.svg" alt="">
+              Назад
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="internet">
+      <div class="container">
+        <h2 class="title">
+          <span>Покупайте</span>
+          <span>в интернете</span>
+        </h2>
+        <div class="row">
+          <div class="col-12 col-xl-4">
+            <a href="#" class="internet_item">
+              <img src="img/internet/wb.svg" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-xl-4">
+            <a href="#" class="internet_item">
+              <img src="img/internet/yandex.svg" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-xl-4">
+            <a href="#" class="internet_item">
+              <img src="img/internet/megamarket.svg" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-xl-4">
+            <a href="#" class="internet_item">
+              <img src="img/internet/lamoda.svg" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-xl-4">
+            <a href="#" class="internet_item">
+              <img src="img/internet/ozon.svg" alt="">
+            </a>
+          </div>
+          <div class="col-12 col-xl-4">
+            <a href="#" class="internet_item">
+              <img src="img/internet/sursil.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="find">
+      <div class="container">
+        <h2 class="title">
+          <span>Ищите нас</span>
+          <span>по адресу</span>
+        </h2>
+      </div>
+      <div class="container position-relative">
+        <div class="find_map">
+          <div class="find_map_item active" data-target="mapOne">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af348d5945fa21e5a0074701f3e366a1def28b7f9371ac0332bd48da0d338dcac&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+          </div>
+          <div class="find_map_item" data-target="mapTwo">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c4153e042ecaeba78224544facc5fc3155e9a7c6eb3132c2dd4008b1457d9e5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+          </div>
+          <div class="find_map_item" data-target="mapThree">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a6d4c2e2a200a1759616054535a260ea2029ad1a9098a9db5a4a9e2054427de&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="find_sidebar">
+          <div class="find_text">
+            <div class="find_text_item active" data-target="mapOne">
+              <h3>Профсоюзная</h3>
+              <div class="find_text_item_m">
+                <img src="img/internet/metro.svg" alt="">
+                <p>Профсоюзная</p>
+              </div>
+              <div class="find_text_item_info">
+                <div class="find_text_item_info_wrap">
+                  <img src="img/icons/geo_white.svg" alt="">
+                  <p>Москва, ул. Профсоюзная, 26/44</p>
+                </div>
+                <a href="tel:+74952586158" class="find_text_item_info_wrap">
+                  <img src="img/icons/tel_white.svg" alt="">
+                  <p>+74952586158</p>
+                </a>
+                <div class="find_text_item_info_wrap">
+                  <img src="img/icons/time_white.svg" alt="">
+                  <p>Москва, ул. Профсоюзная, 26/44</p>
+                </div>
+              </div>
+              <a href="https://yandex.ru/maps/?rtext=~55.678940, 37.563215" class="find_text_item_route">
+                <svg width="47" height="40" viewBox="0 0 47 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7007 26.9997C37.867 23.6218 38.6638 19.4396 37.5634 15.3327C35.4453 7.42796 27.1 2.79591 18.9237 4.98674C10.7474 7.17757 5.83618 15.3617 7.95427 23.2665C9.05469 27.3733 11.8359 30.5968 15.4009 32.4391C16.2935 32.9002 17.3317 33.3734 18.4095 33.8648C21.0258 35.057 23.8754 36.356 25.4439 37.8478C26.4248 38.7809 26.8921 39.5627 27.2213 40.1139C27.6356 40.8069 27.8317 41.1352 28.5575 40.9407C29.2834 40.7462 29.2891 40.3639 29.3014 39.5566C29.3108 38.9146 29.3247 38.0039 29.7076 36.7054C30.3201 34.6292 32.1384 32.0794 33.8081 29.7387L33.8101 29.7353C34.4972 28.7721 35.159 27.8443 35.7007 26.9997ZM24.1395 24.4523C27.0828 23.6636 28.851 20.7173 28.0885 17.8715C27.326 15.0258 24.3215 13.3583 21.3782 14.147C18.4349 14.9356 16.6667 17.8819 17.4292 20.7277C18.1917 23.5734 21.1961 25.2409 24.1395 24.4523Z" fill="#FC3F1D"/>
+                  </g>
+                </svg>
+                <span>Проложить маршрут</span>
+              </a>
+            </div>
+            <div class="find_text_item" data-target="mapTwo">
+              <h3>Балашиха</h3>
+              <div class="find_text_item_m">
+                <img src="img/internet/metro.svg" alt="">
+                <p>Балашиха</p>
+              </div>
+              <div class="find_text_item_info">
+                <div class="find_text_item_info_wrap">
+                  <img src="img/icons/geo_white.svg" alt="">
+                  <p>Москва, ул. Профсоюзная, 26/44</p>
+                </div>
+                <a href="tel:+74952586158" class="find_text_item_info_wrap">
+                  <img src="img/icons/tel_white.svg" alt="">
+                  <p>+74952586158</p>
+                </a>
+                <div class="find_text_item_info_wrap">
+                  <img src="img/icons/time_white.svg" alt="">
+                  <p>Москва, ул. Профсоюзная, 26/44</p>
+                </div>
+              </div>
+              <a href="https://yandex.ru/maps/?rtext=~55.678940, 37.563215" class="find_text_item_route">
+                <svg width="47" height="40" viewBox="0 0 47 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7007 26.9997C37.867 23.6218 38.6638 19.4396 37.5634 15.3327C35.4453 7.42796 27.1 2.79591 18.9237 4.98674C10.7474 7.17757 5.83618 15.3617 7.95427 23.2665C9.05469 27.3733 11.8359 30.5968 15.4009 32.4391C16.2935 32.9002 17.3317 33.3734 18.4095 33.8648C21.0258 35.057 23.8754 36.356 25.4439 37.8478C26.4248 38.7809 26.8921 39.5627 27.2213 40.1139C27.6356 40.8069 27.8317 41.1352 28.5575 40.9407C29.2834 40.7462 29.2891 40.3639 29.3014 39.5566C29.3108 38.9146 29.3247 38.0039 29.7076 36.7054C30.3201 34.6292 32.1384 32.0794 33.8081 29.7387L33.8101 29.7353C34.4972 28.7721 35.159 27.8443 35.7007 26.9997ZM24.1395 24.4523C27.0828 23.6636 28.851 20.7173 28.0885 17.8715C27.326 15.0258 24.3215 13.3583 21.3782 14.147C18.4349 14.9356 16.6667 17.8819 17.4292 20.7277C18.1917 23.5734 21.1961 25.2409 24.1395 24.4523Z" fill="#FC3F1D"/>
+                  </g>
+                </svg>
+                <span>Проложить маршрут</span>
+              </a>
+            </div>
+            <div class="find_text_item" data-target="mapThree">
+              <h3>Варшавская</h3>
+              <div class="find_text_item_m">
+                <img src="img/internet/metro.svg" alt="">
+                <p>Варшавская</p>
+              </div>
+              <div class="find_text_item_info">
+                <div class="find_text_item_info_wrap">
+                  <img src="img/icons/geo_white.svg" alt="">
+                  <p>Москва, ул. Профсоюзная, 26/44</p>
+                </div>
+                <a href="tel:+74952586158" class="find_text_item_info_wrap">
+                  <img src="img/icons/tel_white.svg" alt="">
+                  <p>+74952586158</p>
+                </a>
+                <div class="find_text_item_info_wrap">
+                  <img src="img/icons/time_white.svg" alt="">
+                  <p>Москва, ул. Профсоюзная, 26/44</p>
+                </div>
+              </div>
+              <a href="https://yandex.ru/maps/?rtext=~55.678940, 37.563215" class="find_text_item_route">
+                <svg width="47" height="40" viewBox="0 0 47 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7007 26.9997C37.867 23.6218 38.6638 19.4396 37.5634 15.3327C35.4453 7.42796 27.1 2.79591 18.9237 4.98674C10.7474 7.17757 5.83618 15.3617 7.95427 23.2665C9.05469 27.3733 11.8359 30.5968 15.4009 32.4391C16.2935 32.9002 17.3317 33.3734 18.4095 33.8648C21.0258 35.057 23.8754 36.356 25.4439 37.8478C26.4248 38.7809 26.8921 39.5627 27.2213 40.1139C27.6356 40.8069 27.8317 41.1352 28.5575 40.9407C29.2834 40.7462 29.2891 40.3639 29.3014 39.5566C29.3108 38.9146 29.3247 38.0039 29.7076 36.7054C30.3201 34.6292 32.1384 32.0794 33.8081 29.7387L33.8101 29.7353C34.4972 28.7721 35.159 27.8443 35.7007 26.9997ZM24.1395 24.4523C27.0828 23.6636 28.851 20.7173 28.0885 17.8715C27.326 15.0258 24.3215 13.3583 21.3782 14.147C18.4349 14.9356 16.6667 17.8819 17.4292 20.7277C18.1917 23.5734 21.1961 25.2409 24.1395 24.4523Z" fill="#FC3F1D"/>
+                  </g>
+                </svg>
+                <span>Проложить маршрут</span>
+              </a>
+            </div>
+          </div>
+          <div class="find_sidebar_nav">
+            <div class="find_sidebar_nav_item active" data-target="mapOne">
+              <span>Бабушкинская</span>
+            </div>
+            <div class="find_sidebar_nav_item" data-target="mapTwo">
+              <span>Балашиха</span>
+            </div>
+            <div class="find_sidebar_nav_item" data-target="mapThree">
+              <span>Варшавская</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="find_mob">
+        <div class="find_mob_item active" data-target="mapOne">
+          <span>Бабушкинская</span>
+        </div>
+        <div class="find_mob_item" data-target="mapTwo">
+          <span>Балашиха</span>
+        </div>
+        <div class="find_mob_item" data-target="mapThree">
+          <span>Варшавская</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner">
+      <div class="container">
+        <h2 class="title">
+          <span>Магазины</span>
+          <span>партнёров</span>
+        </h2>
+        <div class="partner_list">
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+          <a href="#" class="partner_list_item">
+            <img src="img/internet/hc_logo.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="suit_down">
+          <span>Хотите с нами сотрудничать?</span>
+          <a href="#" class="button">ПОСМОТРЕТЬ КАТАЛОГ</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer_block">
+              <div class="footer_block_logo">
+                <a href="#">
+                  <img src="img/header/logo.svg" alt="">
+                </a>
+                <p>© Все права защищены. <br> ООО «Сурсил-Орто», 2024.</p>
+              </div>
+              <ul class="footer_block_nav">
+                <li>
+                  <a href="#">Каталог</a>
+                </li>
+                <li>
+                  <a href="#">Heel Comfort</a>
+                </li>
+                <li>
+                  <a href="#">Технология и здоровье</a>
+                </li>
+                <li>
+                  <a href="#">Магазины и маркет-плейсы</a>
+                </li>
+                <li>
+                  <a href="#">Партнёрам</a>
+                </li>
+                <li>
+                  <a href="#">Пользовательское соглашение</a>
+                </li>
+              </ul>
+              <div class="footer_block_contact">
+                <div class="footer_block_contact_item">
+                  <img src="img/icons/geo_white.svg" alt="">
+                  <span>Москва, ул. Профсоюзная, 26/44</span>
+                </div>
+                <div class="footer_block_contact_item">
+                  <img src="img/icons/time_white.svg" alt="">
+                  <span>Пн-Вс: 09:00-20:00</span>
+                </div>
+                <a href="tel:+74952586158" class="footer_block_contact_item">
+                  <img src="img/icons/tel_white.svg" alt="">
+                  <span>+7 (495) 258-61-58</span>
+                </a>
+                <a href="mailto:heelcomfort@mail.ru" class="footer_block_contact_item">
+                  <img src="img/icons/mail_white.png" alt="">
+                  <span>heelcomfort@mail.ru</span>
+                </a>
+              </div>
+              <div class="footer_block_form">
+                <p>Подписывайтесь на наши обновления</p>
+                <form action="">
+                  <div class="form-floating footer_block_form_block">
+                    <input type="email" class="form-control" placeholder="Ваш e-mail">
+                    <label>Ваш e-mail</label>
+                  </div>
+                  <button type="submit">
+                    <svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 0.86159C15 0.477678 15.4147 0.236995 15.7481 0.427468L21.2403 3.56588C21.5762 3.75783 21.5762 4.24217 21.2403 4.43412L15.7481 7.57253C15.4147 7.76301 15 7.52232 15 7.13841V5H1C0.447715 5 0 4.55228 0 4C0 3.44772 0.447715 3 1 3H15V0.86159Z" fill="#A6B1BC"/>
+                    </svg>
+                  </button>
+                </form>
+                <p>Следите за нами в социальных сетях</p>
+                <div class="footer_block_form_social">
+                  <a href="#" target="_blank">
+                    <img src="img/social/telegram.svg" alt="">
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="img/social/vk.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="footer_block_mob">
+                <p>© Все права защищены. <br> ООО «Сурсил-Орто», 2024.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="dropdown">
+      <ul>
+        <li class="desk_hide">
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Технологии</a>
+        </li>
+        <li>
+          <a href="#">Статьи</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li class="desk_hide">
+          <a href="#">Партнёрам</a>
+        </li>
+        <li class="desk_hide">
+          <a href="#">О HEEL COMFORT</a>
+        </li>
+      </ul>
+      <div class="dropdown_social">
+        <a href="#">
+          <img src="img/social/white_telegram.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="img/social/white_vk.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+

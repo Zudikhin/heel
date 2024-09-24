@@ -23,6 +23,59 @@ $(document).ready(function() {
         }
     });
 
+    $('.review_slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        arrows: false,
+        appendDots: $(".review_dots"),
+        draggable: false,
+        autoplay: true,
+        swipe: false, 
+        variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                draggable: true,
+                autoplay: false,
+                swipe: true 
+              }
+            }
+        ]
+    });
+
+    if($(window).width() < 768) {
+        $('.review_slider').on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+            let nextIndex = currentSlide + 1;
+            if(currentSlide-1 == nextSlide || (nextSlide+1 == slick.slideCount && currentSlide < nextSlide)) {
+                nextIndex = currentSlide - 1;
+            }
+            $(`[data-slick-index="${nextIndex}"]`).addClass('slick-target');
+        });
+    
+        $('.review_slider').on('afterChange', () => {
+            $('.slick-slide').removeClass('slick-target');
+        });
+    }
+    
+    $(".modal_filter_top_close").click(function() {
+        $(".modal_filter").removeClass("active");
+        $(".back_filter").removeClass("active");
+    });
+
+    $(".back_filter").click(function() {
+        $(".modal_filter").removeClass("active");
+        $(".back_filter").removeClass("active");
+    });
+
+    $(".catalog_filter_mob").click(function() {
+        $(".modal_filter").addClass("active");
+        $(".back_filter").addClass("active");
+    });
+
     $(".header_block_right_search_form_remove").click(function() {
         $("#search").val("");
         $('.header_block_right_search_drop').removeClass('active');
@@ -50,10 +103,33 @@ $(document).ready(function() {
         dots: true,
         infinite: true,
         speed: 500,
+        autoplay: true,
         fade: true,
         cssEase: 'linear'
     });
 
+    if($(window).width() < 768) {
+        $('.about_list').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+
+        $('.about_slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    }
+
+    $(".news_all_head").click(function() {
+        $(".news_all").toggleClass("active");
+        $(this).parent().find(".news_all_list").slideToggle();
+    });
 
     $('.where_text_item').on('click', function() {
         var target = $(this).data('target');        
@@ -61,6 +137,31 @@ $(document).ready(function() {
         $('.where_map_item[data-target="' + target + '"]').addClass('active');        
         $('.where_text_item').removeClass('active');        
         $(this).addClass('active');
+    });
+
+    $('.find_mob_item').on('click', function() {
+        $('.find_mob_item').removeClass("active");
+        var target = $(this).data('target');        
+        $('.find_map_item').removeClass('active');        
+        $('.find_map_item[data-target="' + target + '"]').addClass('active');        
+        $('.find_text_item').removeClass('active');
+        $('.find_text_item[data-target="' + target + '"]').addClass('active');   
+        $(this).addClass('active');
+    });
+
+    $('.find_sidebar_nav_item').on('click', function() {
+        $('.find_sidebar_nav_item').removeClass("active");
+        var target = $(this).data('target');        
+        $('.find_map_item').removeClass('active');        
+        $('.find_map_item[data-target="' + target + '"]').addClass('active');        
+        $('.find_text_item').removeClass('active');
+        $('.find_text_item[data-target="' + target + '"]').addClass('active');   
+        $(this).addClass('active');
+    });
+
+    $(".product_six_text button").click(function() {
+        $(this).css("display", "none");
+        $(".product_six_text_description p").css("display", "block");
     });
 
     if ($(window).width() < 1200) {
@@ -102,5 +203,7 @@ $(document).ready(function() {
         var parent = $(this).closest('.categories_item');
         parent.find('.categories_item_text_info').toggleClass('active');
     });
+
+    $('select').niceSelect();
  
 });
