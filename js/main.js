@@ -30,9 +30,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         arrows: false,
         appendDots: $(".review_dots"),
-        draggable: false,
         autoplay: true,
-        swipe: false, 
         variableWidth: true,
         responsive: [
             {
@@ -60,7 +58,19 @@ $(document).ready(function() {
             $('.slick-slide').removeClass('slick-target');
         });
     }
+
+    $(".review_slider_item_info_text_btn").click(function() {
+        $(this).closest('.review_slider_item').addClass("active");
+    });
     
+    $(".review_slider_item_btn").click(function() {
+        $(this).closest('.review_slider_item').addClass("active");
+    });
+
+    $(".review_slider_item_video_back").click(function() {
+        $(this).closest('.review_slider_item').removeClass("active");
+    });
+
     $(".modal_filter_top_close").click(function() {
         $(".modal_filter").removeClass("active");
         $(".back_filter").removeClass("active");
@@ -88,6 +98,18 @@ $(document).ready(function() {
         $('.header_block_left_burger').removeClass('active');
         $(".dropdown").removeClass('active');
         $(".back_modal").removeClass('active');
+    });
+
+    $(".blog_item_text_down_share").click(function() {
+        $(this).closest('.blog_item').addClass("active");
+    });
+
+    $(".news_item_text_down_share").click(function() {
+        $(this).closest('.news_item').addClass("active");
+    });
+
+    $(".single_footer_up_share").click(function() {
+        $(this).closest('.single').addClass("active");
     });
 
     $(document).on('click', function(event) {
