@@ -8459,6 +8459,9 @@ p {
   .news_sidebar_list_item:first-child::after {
     display: none;
   }
+  .tablet_hide {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .news_item_img img {
@@ -8507,6 +8510,9 @@ p {
             transform: translateY(0%);
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+  }
+  .tablet_hide {
+    display: block;
   }
 }
 @media (min-width: 1400px) {
