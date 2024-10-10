@@ -72,9 +72,7 @@ $(document).ready(function() {
     });
 
     $('.review_slider .slick-slide').on('click', function() {  
-        // Получаем индекс слайда  
         var index = $(this).data('slick-index');  
-        // Переключаемся на нужный слайд  
         $('.review_slider').slick('slickGoTo', index);  
     }); 
 
@@ -334,7 +332,6 @@ $(document).ready(function() {
         $('select').select2({
             dropdownPosition: 'below'
         });
-    }  
-    
+    }   
  
 });

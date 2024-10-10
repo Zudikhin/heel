@@ -1,0 +1,359 @@
+.footer {
+    box-sizing: border-box;
+    background: #404D5B;
+    padding: 20px 0px;
+    margin-top: 60px;
+    &.nomargin {
+        margin-top: 0px;
+    }
+    &_block {
+        display: flex;
+        flex-direction: column;
+        &_logo {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & p {
+                display: none;
+            }
+        }
+        &_nav {
+            order: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 20px 0px;
+            border-bottom: 1px solid #515E6C;
+            & li {
+                display: none;
+                &:last-child {
+                    display: block;
+                }
+                & a {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0.02em;
+                    color: #fff;
+                    transition: all 0.15s linear;
+                    &:hover {
+                        color: #8996A5;
+                        transition: all 0.15s linear;
+                    }
+                }
+            }
+        }
+        &_contact {
+            order: 4;
+            padding: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 240px;
+            margin: 0 auto;
+            &_item {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                &:first-child {
+                    margin-top: 0px;
+                }
+                & img {
+                    max-width: 18px;
+                    margin-right: 10px;
+                }
+                & span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    letter-spacing: 0.02em;
+                    color: #fff;
+                }
+            }
+        }
+        &_form {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px;
+            border-bottom: 1px solid #515E6C;
+            & p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 0.02em;
+                color: #fff;
+            }
+            &_block {
+                position: relative;
+                padding: 0px;
+            }
+            & form {
+                width: 100%;
+                position: relative;
+                margin: 20px 0px;
+                & .form-control {
+                    width: 100%;
+                    height: 60px;
+                    line-height: 60px;
+                    box-sizing: border-box;
+                    padding: 0px 60px 0px 20px;
+                    font-size: 14px;
+                    font-weight: 300;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #fff;
+                    border: 2px solid #FFFFFF;
+                    background: transparent;
+                    border-radius: 10px;
+                    box-shadow: none;
+                    transition: all 0.15s linear;
+                    &:hover {
+                        border-color: #8996A5;
+                        transition: all 0.15s linear;
+                    }
+                }
+                & label {
+                    background: transparent;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    padding: 1rem 20px;
+                    color: #8996A5;
+                    &::after {
+                        display: none;
+                    }
+                }
+                & .form-control:focus ~ label {
+                    color: #8996A5;
+                }
+                & button {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #BFC9D2;
+                    border-radius: 4px;
+                    transition: all 0.15s linear;
+                    & svg {
+                        & path {
+                            transition: all 0.15s linear;
+                        }
+                    }
+                    &:hover {
+                        background: #8996A5;
+                        transition: all 0.15s linear;
+                        & svg {
+                            & path {
+                                fill: #fff;
+                                transition: all 0.15s linear;
+                            }
+                        }
+                    }
+                }
+            }
+            &_social {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                & a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    margin-left: 20px;
+                    background-color: #fff;
+                    transition: all 0.15s linear;
+                    &:first-child {
+                        margin-left: 0px;
+                        & img {
+                            transform: translateX(-2px);
+                        }
+                    }
+                    &:hover {
+                        background: #8996A5;
+                        transition: all 0.15s linear;
+                    }
+                }
+            }
+        }
+        &_mob {
+            box-sizing: border-box;
+            padding-top: 20px;
+            order: 5;
+            border-top: 1px solid #515E6C;
+            & p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0.02em;
+                text-align: center;
+                color: #9FACBA;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 30px 0px;
+        margin-top: 100px;
+        &_block {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            &_logo {
+                width: 50%;
+                align-items: flex-start;
+                padding-right: 118px;
+                padding-bottom: 30px;
+                & a {
+                    & img {
+                        width: 210px;
+                    }
+                }
+                & p {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #9FACBA;
+                    margin-top: 50px;
+                }
+            }
+            &_form {
+                width: 50%;
+                align-items: flex-start;
+                padding: 0px;
+                border: none;
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+            &_nav {
+                width: 100%;
+                order: 4;
+                padding: 15px 0px 0px 0px;
+                border-top: 1px solid #515E6C;
+                border-bottom: none;
+                flex-direction: row;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                & li {
+                    display: block;
+                    width: calc(100%/3);
+                    margin-top: 15px;
+                }
+            }
+            &_contact {
+                width: 100%;
+                order: 3;
+                max-width: 100%;
+                padding: 30px 0px;
+                border-top: 1px solid #515E6C;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                &_item {
+                    width: 50%;
+                    margin-top: 15px;
+                    & span {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            &_mob {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 50px 0px;
+        &_block {
+            align-items: flex-start;
+            justify-content: space-between;
+            &_logo {
+                width: calc(25% - 20px);
+                order: 1;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                & a {
+                    transition: all 0.15s linear;
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: all 0.15s linear;
+                    }
+                }
+            }
+            &_nav {
+                width: calc(25% - 20px);
+                order: 2;
+                flex-direction: column;
+                padding-top: 0px;
+                border: none;
+                & li {
+                    width: 100%;
+                    &:first-child {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            &_contact {
+                width: calc(25% - 20px);
+                order: 3;
+                margin: 0px;
+                padding: 0px;
+                border: none;
+                flex-direction: column;
+                align-items: flex-start;
+                &_item {
+                    width: auto;
+                    &:nth-child(2) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            &_form {
+                width: calc(25% - 20px);
+                order: 4;
+            }
+        }
+    }
+    @media (min-width: 1920px) {
+        margin-top: 150px;
+        &_block {
+            &_nav {
+                & li {
+                    & a {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            &_contact {
+                &_item {
+                    & span {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

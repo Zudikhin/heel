@@ -1,0 +1,161 @@
+.new {
+    padding: 80px 0px 0px 0px;
+    &_text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #404D5B;
+        margin: 30px 0px;
+    }
+    & .row {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding-bottom: 20px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &_item {
+        overflow: hidden;
+        display: block;
+        border-radius: 15px;
+        box-shadow: 0px 2px 7px 0px #C6C6C6;
+        background: #E3F0FF;
+        & img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            display: flex;
+        }
+        &_text {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            & h3 {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                color: #404D5B;
+                text-transform: uppercase;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    width: 100%;
+                    bottom: -15px;
+                    height: 1px;
+                    background: #D0D3D8;
+                }
+            }
+            & p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                color: #404D5B;
+                margin-top: 30px;
+            }
+        }
+    }
+    &_all {
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    @media (min-width: 768px) {
+        padding: 120px 0px 0px 0px;
+        &_text {
+            margin-bottom: 10px;
+        }
+        & .row {
+            flex-wrap: wrap;
+            overflow: visible;
+            padding-bottom: 0px;
+        }
+        &_item {
+            display: flex;
+            align-items: stretch;
+            margin-top: 20px;
+            & img {
+                height: 186px;
+                width: 200px;
+            }
+            &_text {
+                padding-left: 30px;
+            }
+        }
+        &_all {
+            width: 256px;
+            margin-top: 30px;
+        }
+    }
+    @media (min-width: 1200px) {
+        &_text {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+        }
+        &_item {
+            margin-top: 0px;
+            flex-direction: column;
+            height: 350px;
+            position: relative;
+            & img {
+                height: auto;
+                width: 100%;
+                transition: all 0.15s linear;
+            }
+            &_text {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                z-index: 2;
+            }
+            &:hover {
+                & img {
+                    transform: scale(1.1);
+                    transition: all 0.15s linear;
+                }
+            }
+        }
+        &_all {
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+    }
+    @media (min-width: 1920px) {
+        padding: 200px 0px 0px 0px;
+        &_text {
+            margin: 50px 0px 50px 262px;
+        }
+        &_item {
+            height: 430px;
+            &_text {
+                padding: 20px 40px;
+                & h3 {
+                    font-size: 20px;
+                    line-height: 26px;
+                    &::after {
+                        bottom: -20px;
+                    }
+                }
+                & p {
+                    margin-top: 40px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+        &_all {
+            margin-left: 262px;
+        }
+    }
+}

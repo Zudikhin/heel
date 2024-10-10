@@ -1,0 +1,239 @@
+.blog {
+    & h2 {
+        margin-bottom: 30px;
+    }
+    &_item {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-top: 20px;
+        box-shadow: 0px 2px 7px 0px #C6C6C6;
+        &_img {
+            display: block;
+            & img {
+                display: flex;
+            }
+        }
+        &_text {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 20px;
+                top: 76px;
+                width: calc(100% - 40px);
+                height: 1px;
+                background: #D0D3D8;
+            }
+            & h3 {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #404D5B;
+                position: relative;
+                max-height: 42px; /* Ограничиваем высоту до трёх строк (можно настроить) */
+                overflow: hidden; /* Скрываем текст, который выходит за пределы */
+                text-overflow: ellipsis; /* Добавляем троеточие */
+                display: -webkit-box; /* Для поддержки WebKit-браузеров (Chrome, Safari) */
+                -webkit-line-clamp: 2; /* Ограничиваем количество строк */
+                -webkit-box-orient: vertical; /* Задаём вертикальную ориентацию для WebKit */
+                word-wrap: break-word; /* Разрешаем перенос слов */
+                & a {
+                    color: #404D5B;
+                }
+            }
+            & p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                margin-top: 30px;
+                position: relative;
+                max-height: 75px; /* Ограничиваем высоту до трёх строк (можно настроить) */
+                overflow: hidden; /* Скрываем текст, который выходит за пределы */
+                text-overflow: ellipsis; /* Добавляем троеточие */
+                display: -webkit-box; /* Для поддержки WebKit-браузеров (Chrome, Safari) */
+                -webkit-line-clamp: 4; /* Ограничиваем количество строк */
+                -webkit-box-orient: vertical; /* Задаём вертикальную ориентацию для WebKit */
+                word-wrap: break-word; /* Разрешаем перенос слов */
+                & a {
+                    color: #404D5B;
+                }
+            }
+            &_down {
+                height: 30px;
+                margin-top: 32px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &_share {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    & span {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 19px;
+                        letter-spacing: 0.02em;
+                        text-align: left;
+                        margin-left: 10px;
+                        color: #404D5B;
+                        transition: all 0.15s linear;
+                    }
+                    & svg {
+                        & path {
+                            transition: all 0.15s linear;
+                        }
+                        & circle {
+                            transition: all 0.15s linear;
+                        }
+                    }
+                    &:hover {
+                        & span {
+                            color: #8996A5;
+                            transition: all 0.15s linear;
+                        }
+                        & svg {
+                            & path {
+                                stroke: #8996A5;
+                                transition: all 0.15s linear;
+                            }
+                            & circle {
+                                stroke: #8996A5;
+                                transition: all 0.15s linear;
+                            }
+                        }
+                    }
+                }
+                &_social {
+                    display: none;
+                    align-items: center;
+                    & a {
+                        background: #404D5B;
+                        transition: all 0.15s linear;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 15px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        &:hover {
+                            background: #8996A5;
+                            transition: all 0.15s linear;
+                        }
+                    }
+                }
+                & time {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    text-align: left;
+                    color: #404D5B;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: -16px;
+                    width: 100%;
+                    height: 1px;
+                    background: #D0D3D8;
+                }
+            }
+        }
+        &.active {
+            & .blog_item_text_down_share {
+                display: none;
+            }
+            & .blog_item_text_down_social {
+                display: flex;
+            }
+        }
+    }
+    &_more {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background: #E9EEF3;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-align: center;
+        -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2509803922);
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.2509803922);
+        text-transform: uppercase;
+        border-radius: 15px;
+        -webkit-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+        color: #404D5B;
+        margin-top: 30px;
+        display: block;
+        &:hover {
+            background: #8996A5;
+            -webkit-transition: all 0.15s linear;
+            transition: all 0.15s linear;
+        }
+    }
+    @media (min-width: 768px) {
+        &_more {
+            margin: 0 auto;
+            width: 242px;
+            margin-top: 50px;
+        }
+    }
+    @media (min-width: 1200px) {
+        &_item {
+            &_text {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                transform: translateY(69%);
+                transition: all 0.15s linear;
+                &_down {
+                    &_social {
+                        & a {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                & .blog_item_text {
+                    transform: translateY(0%);
+                    transition: all 0.15s linear;
+                }
+            }
+        }
+    }
+    @media (min-width: 1920px) {
+        & h2 {
+            margin-bottom: 80px;
+        }
+        &_item {
+            &_text {
+                transform: translateY(65%);
+                & h3 {
+                    font-size: 20px;
+                    line-height: 26px;
+                    max-height: 52px;
+                }
+                & p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                &::after {
+                    top: 88px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,246 @@
+.suit {
+    padding: 80px 0px 10px 0px;
+    overflow: hidden;
+    & h2 {
+        margin-bottom: 30px;
+    }
+    &_text {
+        & p {
+            margin-top: 20px;
+        }
+        & h3 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            margin-top: 50px;
+        }
+    }
+    &_gray {
+        background: #8996A5;
+        padding: 20px 0px;
+        margin: 30px 0px;
+        box-shadow: 0px 2px 7px 0px #00000040;
+        & h3 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #fff;
+        }
+        &_title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            & span {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 23px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: #fff;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-top: 15px;
+                &:first-child {
+                    margin-top: 0px;
+                }
+            }
+            
+        }
+    }
+    &_down {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #8996A5;
+        padding: 15px 0px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 0px;
+            width: calc(100% + 30px);
+            height: 100%;
+            background: #8996A5;
+            box-shadow: 0px 2px 7px 0px #00000040;
+        }
+        & span {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18.2px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 2;
+        }
+        & a {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            position: relative;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 120px 0px 10px 0px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
+            width: calc(50% + 348px);
+            height: 90px;
+            background: #8996A5;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            box-shadow: 0px 2px 7px 0px #00000040;
+        }
+        &_text {
+            padding-left: 42px;
+            & h3 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        &_gray {
+            & h3 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                padding-left: 42px;
+            }
+            &_title {
+                padding-left: 42px;
+                & span {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 28px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        &_down {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+            border-radius: 15px;
+            padding: 15px 0px 15px 42px;
+            & span {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+            }
+            & a {
+                margin-top: 0px;
+                width: 272px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        &::after {
+            width: calc(50% + 427px);
+        }
+        &_down {
+            margin-top: 50px;
+            margin-left: 42px;
+        }
+    }
+    @media (min-width: 1200px) {
+        &::after {
+            width: calc(50% + 459px);
+        }
+        &_text {
+            padding-left: 100px;
+            & p {
+                max-width: 810px;
+            }
+            & h3 {
+                font-size: 30px;
+                line-height: 42px;
+                font-weight: 500;
+                max-width: 982px;
+            }
+        }
+        &_gray {
+            &_title {
+                padding-left: 100px;
+                & span {
+                    font-size: 30px;
+                    line-height: 42px;
+                    font-weight: 500;
+                }
+            }
+            & h3 {
+                padding-left: 100px;
+                font-size: 30px;
+                line-height: 42px;
+                font-weight: 500;
+                max-width: 930px;
+            }
+        }
+        &_down {
+            margin-left: 100px;
+            & span {
+                font-size: 30px;
+                line-height: 42px;
+            }
+        }
+    }
+    @media (min-width: 1400px) {
+        &::after {
+            width: calc(50% + 550px);
+        }
+    }
+    @media (min-width: 1920px) {
+        padding: 200px 0px 10px 0px;
+        &::after {
+            height: 130px;
+        }
+        & h2 {
+            margin-bottom: 50px;
+        }
+        &_text {
+            padding-left: 262px;
+            & h3 {
+                margin-top: 100px;
+            }
+        }
+        & .effect_rows_desk {
+            margin-top: 30px;
+        }
+        &_gray {
+            margin: 50px 0px;
+            padding: 50px 0px;
+            &_title {
+                padding-left: 262px;
+            }
+            & h3 {
+                padding-left: 262px;
+                max-width: 1092px;
+            }
+        }
+        &_down {
+            margin-left: 262px;
+            margin-top: 100px;
+            padding: 30px 0px 30px 40px;
+            & span {
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 70px;
+                letter-spacing: 0.08em;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.video {
+    background: #E8E8E8;
+    padding-top: 20px;
+    box-shadow: 0px 2px 7px 0px #00000040;
+    &.other {
+        background: transparent;
+        box-shadow: none;
+    }
+    & video {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+    }
+    @media (min-width: 768px) {
+        padding-top: 30px;
+        & video {
+            margin-top: 30px;
+            object-fit: cover;
+        }
+    }
+    @media (min-width: 1920px) {
+        padding-top: 50px;
+        & video {
+            margin-top: 50px;
+        }
+    }
+}
